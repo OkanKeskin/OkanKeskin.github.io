@@ -1,0 +1,21 @@
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px 0 150px;
+}
+.nav-ul{
+    display: flex;
+    list-style: none; 
+
+}
+.nav-ul li{
+    padding: 10px;
+    list-style: none; 
+
+}
