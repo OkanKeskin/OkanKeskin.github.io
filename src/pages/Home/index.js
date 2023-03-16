@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className='home'>
         <div className="foto">
-            <img width={500} src={logo} alt="nah" />
+            <img width={200} src={logo} alt="nah" />
         </div>
     </div>
   )

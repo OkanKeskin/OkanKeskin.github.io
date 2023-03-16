@@ -7,13 +7,13 @@ function Header() {
     <div className='header'>
       <div className="div">
         <div className="logo">
-          <h2>Okan Keskin</h2>
+          <h1>Okan Keskin</h1>
         </div>
         <nav>
           <ul className='nav-ul'>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/cv">CV</Link></li>
-            <li><Link to="/portfolio">Portfolio</Link></li>
+            <li><Link className='btn' to="/">Home</Link></li>
+            <li><Link className='btn' to="/cv">CV</Link></li>
+            <li><Link className='btn' to="/portfolio">Portfolio</Link></li>
           </ul>
         </nav>
       </div>

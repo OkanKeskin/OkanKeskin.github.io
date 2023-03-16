@@ -1,5 +1,6 @@
 .header{
-    width: 100%;
+    max-width: 100%;
+    padding: 5px 0;
     display: flex;
     flex-direction: column;
 }
@@ -7,15 +8,51 @@
 .div{
     display: flex;
     justify-content: space-between;
-    margin: 0 200px 0 150px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
+
 .nav-ul{
     display: flex;
+    margin-left: 250px;
     list-style: none; 
-
 }
+
 .nav-ul li{
     padding: 10px;
     list-style: none; 
+}
 
+.nav-ul li .btn{
+    color: rgba(0, 0, 0, 0.548);
+    font-size: 20px;
+}
+
+.nav-ul li .btn:hover{
+    color: rgba(146, 82, 8, 0.897);
+}
+
+
+
+@media only screen and (max-width:500px){
+    .header{
+        max-width: 100%;
+        display: flex;
+    }
+    
+    .div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div .logo{
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .nav-ul{
+        display: flex;
+        margin: 0 auto;
+        list-style: none; 
+    }
 }
