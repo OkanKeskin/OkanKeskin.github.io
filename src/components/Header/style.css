@@ -12,6 +12,10 @@
     margin: 0 auto;
 }
 
+.logo h1{
+    font-weight: bolder;
+}
+
 .nav-ul{
     display: flex;
     margin-left: 250px;
@@ -26,12 +30,17 @@
 .nav-ul li .btn{
     color: rgba(0, 0, 0, 0.548);
     font-size: 20px;
+    padding: 10px;
 }
 
 .nav-ul li .btn:hover{
+    border: 1px solid rgba(146, 82, 8, 0.897);
     color: rgba(146, 82, 8, 0.897);
 }
 
+.selected-link {
+    color: red;
+  }
 
 
 @media only screen and (max-width:500px){

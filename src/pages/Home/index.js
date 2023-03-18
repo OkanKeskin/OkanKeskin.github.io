@@ -2,7 +2,9 @@ import React from 'react'
 
 //css
 import './style.css'
-import logo from './nah.jpeg'
+
+//image
+import logo from './assets/nah.jpeg'
 
 function Home() {
   return (
