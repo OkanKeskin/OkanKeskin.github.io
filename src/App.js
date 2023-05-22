@@ -3,8 +3,7 @@ import React from 'react';
 import {BrowserRouter, Routes,Route} from "react-router-dom";
 
 //Components
-import Header from './components/Header'
-import Space from './components/Space'
+import Sidebar from './components/Sidebar'
 
 //Pages
 import Home from './pages/Home'
@@ -19,16 +18,16 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Space />
-        <Header />
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/cv" element={<CV />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="*" index element={<Error404 />} />
-        </Routes>
-        <Space />
-    </BrowserRouter>
+        <div className="panel">
+          <Sidebar />
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/cv" element={<CV />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="*" index element={<Error404 />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
       
       
       

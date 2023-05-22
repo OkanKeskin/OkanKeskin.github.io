@@ -4,14 +4,18 @@ import { NavLink } from "react-router-dom";
 //css
 import "./style.css";
 
-function Header() {
+function Sidebar() {
   return (
-    <div className="header">
-      <div className="div">
-        <div className="logo">
-          <h1>Okan Keskin</h1>
-        </div>
-        <nav>
+    <div className="sidebar">
+      <div className="logo">
+        <h2>
+            okN
+            <br />
+            kskn
+        </h2>
+      </div>
+
+      <div className="nav">
           <ul className="nav-ul">
             <li>
               <NavLink
@@ -20,7 +24,7 @@ function Header() {
                 style={({ isActive }) => ({
                   color: isActive
                     ? "rgba(146, 82, 8, 0.897)"
-                    : "rgba(0, 0, 0, 0.548)",
+                    : "#909096",
                 })}
               >
                 Home
@@ -33,7 +37,7 @@ function Header() {
                 style={({ isActive }) => ({
                   color: isActive
                     ? "rgba(146, 82, 8, 0.897)"
-                    : "rgba(0, 0, 0, 0.548)",
+                    : "#909096",
                 })}
               >
                 CV
@@ -46,17 +50,43 @@ function Header() {
                 style={({ isActive }) => ({
                   color: isActive
                     ? "rgba(146, 82, 8, 0.897)"
-                    : "rgba(0, 0, 0, 0.548)",
+                    : "#909096",
                 })}
               >
                 Portfolio
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                className="btn"
+                to="/portfolio"
+                style={({ isActive }) => ({
+                  color: isActive
+                    ? "rgba(146, 82, 8, 0.897)"
+                    : "#909096",
+                })}
+              >
+                Blog
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="btn"
+                to="/portfolio"
+                style={({ isActive }) => ({
+                  color: isActive
+                    ? "rgba(146, 82, 8, 0.897)"
+                    : "#909096",
+                })}
+              >
+                Contact
+              </NavLink>
+            </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+
     </div>
   );
 }
 
-export default Header;
+export default Sidebar;

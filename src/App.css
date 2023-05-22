@@ -9,8 +9,12 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #1d1d1d;
 }
 
+.panel{
+  display: flex;
+}
 
 @media (min-width:400){
   .space{
